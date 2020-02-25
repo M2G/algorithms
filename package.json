@@ -1,0 +1,18 @@
+{
+  "name": "@m2g/algorithms",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./lru/lru.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:algorithms/algorithms.git"
+  },
+  "author": "m2g",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
