@@ -1,5 +1,5 @@
-function bubblesort(array) {
-    if (array.length < 2){
+function bubblesort(array = []) {
+    if (array && array.length <= 1){
         return array;
     }
 
