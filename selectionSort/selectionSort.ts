@@ -30,7 +30,4 @@ function selectionSort(array) {
 
 }
 
-
-const array = [5, 10, 15, 20, 2, 4, 6, 8, 10];
-
-console.log(selectionSort(array));
+export default selectionSort;
