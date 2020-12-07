@@ -4,7 +4,7 @@
  * In Place Sorting: True
  */
 
-function insertionSort(list = []) {
+function insertionSort(list:number[] = []) {
 
   if (list && list.length <= 1) {
     return list;
@@ -40,6 +40,7 @@ function insertionSort(list = []) {
     console.log('list[j + 1] ', list[j + 1] )
 
     // list[j + 1]: 5,10,5,15,20,4,15,10,22,10
+    // @ts-ignore
     list[j + 1] = tmp;
   }
 
@@ -47,6 +48,4 @@ function insertionSort(list = []) {
 
 }
 
-const array = [5, 10, 4, 15, 20, 2, 10, 6, 22, 8];
-
-console.log(insertionSort(array));
+export default insertionSort;
