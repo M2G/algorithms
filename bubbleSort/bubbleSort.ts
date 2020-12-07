@@ -1,4 +1,4 @@
-function bubblesort(array = []) {
+function bubblesort(array:number[] = []) {
     if (array && array.length <= 1){
         return array;
     }
@@ -16,6 +16,4 @@ function bubblesort(array = []) {
     return array;
 }
 
-const array = [5, 10, 15, 20, 2, 4, 6, 8, 10];
-
-console.log(bubblesort(array));
+export default bubblesort;

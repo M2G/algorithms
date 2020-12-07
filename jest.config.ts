@@ -1,7 +1,7 @@
 module.exports = {
     "globals": {
         "ts-jest": {
-            "tsConfig": "<rootDir>/tsconfig.json"
+            "tsconfig": "<rootDir>/tsconfig.json"
         }
     },
     "preset": "ts-jest",
@@ -20,6 +20,7 @@ module.exports = {
     "modulePaths": [],
     "moduleFileExtensions": [
         "ts",
+        "js",
         "json",
         "node"
     ],
