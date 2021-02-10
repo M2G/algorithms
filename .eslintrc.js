@@ -20,14 +20,14 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/all",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/recommended"
   ],
   parserOptions: {
     project: path.resolve(__dirname, './tsconfig.json'),
     tsconfigRootDir: __dirname,
     ecmaVersion: 2018,
-    sourceType: 'module',
-    extraFileExtensions: [".scss"]
+    sourceType: 'module'
   },
   plugins: ["@typescript-eslint", "jest", "prettier"],
   rules: {
@@ -74,6 +74,9 @@ module.exports = {
     "@typescript-eslint/quotes": 0,
     "@typescript-eslint/restrict-template-expressions": 0,
     "@typescript-eslint/unbound-method": 1,
+    "@typescript-eslint/consistent-type-assertions": 1,
+    "@typescript-eslint/ban-ts-comment": 1,
+    "@typescript-eslint/prefer-readonly-parameter-types": 1,
   },
   settings: {
     "html/html-extensions": [".html"],
