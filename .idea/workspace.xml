@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d103ce3-5d66-4afa-aafe-92050ed0604b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lDgJ8tPpnQ4AOYTTclcVaeo0SG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/selectionSort" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/selectionSort" />
+      <recent name="$PROJECT_DIR$/quickSort" />
+      <recent name="$PROJECT_DIR$/insertionSort/test" />
+      <recent name="$PROJECT_DIR$/bubbleSort" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.selectionSort test.selectionSort">
+    <configuration name="bubbleSort test.bubbleSort" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/bubbleSort/test/bubbleSort.test.ts" />
+      <test-names>
+        <test-name value="bubbleSort test" />
+        <test-name value="bubbleSort" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="insertionSort test.insertionSort" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/insertionSort/test/insertionSort.test.ts" />
+      <test-names>
+        <test-name value="insertionSort test" />
+        <test-name value="insertionSort" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="quickSort test.quickSort" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/quickSort/test/quickSort.test.ts" />
+      <test-names>
+        <test-name value="quickSort test" />
+        <test-name value="quickSort" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="selectionSort test.selectionSort" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/selectionSort/test/selectionSort.test.ts" />
+      <test-names>
+        <test-name value="selectionSort test" />
+        <test-name value="selectionSort" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="validParentheses test.is valid (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/validParentheses/test/validParentheses.test.ts" />
+      <test-names>
+        <test-name value="validParentheses test" />
+        <test-name value="is valid" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.selectionSort test.selectionSort" />
+        <item itemvalue="Jest.quickSort test.quickSort" />
+        <item itemvalue="Jest.insertionSort test.insertionSort" />
+        <item itemvalue="Jest.bubbleSort test.bubbleSort" />
+        <item itemvalue="Jest.validParentheses test.is valid (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d103ce3-5d66-4afa-aafe-92050ed0604b" name="Default Changelist" comment="" />
+      <created>1607137000761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607137000761</updated>
+      <workItem from="1607137001964" duration="182000" />
+      <workItem from="1607183296223" duration="6367000" />
+      <workItem from="1607290914046" duration="424000" />
+      <workItem from="1607296010583" duration="3646000" />
+      <workItem from="1607307644057" duration="136000" />
+      <workItem from="1607308053472" duration="1284000" />
+      <workItem from="1607309444302" duration="2560000" />
+      <workItem from="1607350398640" duration="592000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
