@@ -15,17 +15,26 @@ class LinkedList {
 }
 
 function deleteGreater(head, value) {
-    if (head == null) return null;
+    if (head === null){
+        return null;
+    }
+
     if (head.data > value) {
         return null;
     }
 
-    var current = head;
+    let current = head;
 
     while (true) { 
-        if (current.next == null) return head; //end of list
-        if (current.next.data > value) break;
-        current = current.next;
+        if (current.next == null) { 
+          return head;
+        } //end of list
+
+       if (current.next.data > value) {
+         break;
+       } 
+
+       current = current.next;
     }
 
     current.next = null; 
@@ -61,7 +70,7 @@ function main(){
 
    deleteGreater(list, 6)
 
-   console.log('list', list.head.next.next.next)
+   console.log('list', list.head.next.next.next.next.next.next)
 }
 
 main();
