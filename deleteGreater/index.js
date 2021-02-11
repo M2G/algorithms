@@ -1,5 +1,8 @@
 /*  eslint-disable */
 
+
+
+
 class ListNode {
     constructor(data) {
         this.data = data;
@@ -12,6 +15,42 @@ class LinkedList {
         //@ts-ignore
         this.head = head;
     }
+
+    add(element) { 
+    // creates a new node 
+    var node = new Node(element); 
+  
+    // to store current node 
+    var current; 
+  
+    // if list is Empty add the 
+    // element and make it head 
+    if (this.head == null) 
+        this.head = node; 
+    else { 
+        current = this.head; 
+  
+        // iterate to the end of the 
+        // list 
+        while (current.next) { 
+            current = current.next; 
+        } 
+  
+        // add node 
+        current.next = node; 
+    } 
+    this.size += 1; 
+} 
+
+    printList() { 
+    var curr = this.head; 
+    var str = ""; 
+    while (curr) { 
+        str += curr.element + " "; 
+        curr = curr.next; 
+    } 
+    console.log(str); 
+  } 
 }
 
 function deleteGreater(head, value) {
@@ -26,7 +65,7 @@ function deleteGreater(head, value) {
     let current = head;
 
     while (true) { 
-        if (current.next == null) { 
+        if (current.next === null) { 
           return head;
         } //end of list
 
