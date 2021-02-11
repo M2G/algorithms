@@ -1,9 +1,7 @@
 /*  eslint-disable */
 
 
-
-
-class ListNode {
+class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -11,17 +9,19 @@ class ListNode {
 } 
 
 class LinkedList {
-    constructor(head = null){
-        //@ts-ignore
-        this.head = head;
-    }
+     constructor() 
+    { 
+        this.head = null; 
+        this.size = 0; 
+    } 
 
-    add(element) { 
+add(element) 
+{ 
     // creates a new node 
-    var node = new Node(element); 
+    const node = new Node(element); 
   
     // to store current node 
-    var current; 
+    let current; 
   
     // if list is Empty add the 
     // element and make it head 
@@ -39,21 +39,22 @@ class LinkedList {
         // add node 
         current.next = node; 
     } 
-    this.size += 1; 
-} 
-
-    printList() { 
-    var curr = this.head; 
-    var str = ""; 
+    this.size++; 
+}  
+printList() 
+{ 
+    let curr = this.head; 
+    let str = ""; 
     while (curr) { 
-        str += curr.element + " "; 
+        str += curr.data + " "; 
         curr = curr.next; 
     } 
     console.log(str); 
-  } 
+}  
 }
 
 function deleteGreater(head, value) {
+    /*
     if (head === null){
         return null;
     }
@@ -69,6 +70,8 @@ function deleteGreater(head, value) {
           return head;
         } //end of list
 
+        console.log('current', current.next)
+
        if (current.next.data > value) {
          break;
        } 
@@ -77,39 +80,51 @@ function deleteGreater(head, value) {
     }
 
     current.next = null; 
+    return head;*/
+
+if (head == null) return null;
+    if (head.data > value) {
+        
+        return null;
+    }
+
+    var current = head;
+
+    while (true) {
+        if (current.next == null) return head; //end of list
+        if (current.next.data > value) break;
+        current = current.next;
+    }
+
+
+    current.next = null; 
     return head;
+
 }
 
  
 
 function main(){
 
+    const list = new LinkedList();
 
-    let node1 = new ListNode(7);
-    let node2 = new ListNode(3);
-    let node3 = new ListNode(4); 
-    let node4 = new ListNode(8); 
-    let node5 = new ListNode(5); 
-    let node6 = new ListNode(1); 
+    list.add(7);
 
-     //@ts-ignore
-    node1.next = node2;
-      //@ts-ignore
-    node1.next.next = node3;
-      //@ts-ignore
-    node1.next.next.next = node4; 
-      //@ts-ignore   
-    node1.next.next.next.next = node5;
 
-    node1.next.next.next.next.next = node6;
+    list.printList(); 
 
-    let list = new LinkedList(node1)
+    list.add(3);
+    list.add(4);
+    list.add(8);
+    list.add(5);
+    list.add(1);
 
-    console.log('list.head.next.data', list.head.next.next.next.next.next)
+    const test = deleteGreater(list, 6); 
 
-   deleteGreater(list, 6)
+    console.log('test', test)
 
-   console.log('list', list.head.next.next.next.next.next.next)
+    list.printList(); 
+
 }
 
 main();
