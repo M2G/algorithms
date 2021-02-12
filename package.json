@@ -1,7 +1,7 @@
 {
   "name": "@m2g/algorithms",
   "version": "0.0.0",
-  "description": "",
+  "description": "My Own algorithms",
   "homepage": "https://github.com/M2G/algorithms",
   "bugs": {
     "url": "https://github.com/M2G/algorithms/issues"
@@ -11,8 +11,11 @@
     "start": "npm run serve",
     "build": "npm run build-ts && npm run tslint",
     "serve": "node --experimental-modules --harmony-top-level-await build/index.js",
+    "serve2": "node --experimental-modules --harmony-top-level-await build/deleteGreater/index.js",
     "watch-node": "nodemon build/index.js",
+    "watch-node2": "nodemon build/deleteGreater/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "watch2": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node2\"",
     "watch-test": "npm run test -- --watchAll",
     "build-ts": "rm -rf ./build && tsc",
     "watch-ts": "tsc -w",
