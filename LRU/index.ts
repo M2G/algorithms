@@ -163,7 +163,8 @@ class LRUCache {
 
   public get(key: number): boolean {
 
-  console.log('contain', this.list.contains(key))
+  console.log('key', key)
+      console.log(':::::', this.list.contains(key))
 
       if(!this.list.contains(key)){
           return false;
@@ -204,9 +205,8 @@ function main(){
         lru.refer(2);
         lru.refer(3);
         lru.refer(1);
-        lru.refer(4);
+        lru.refer(4); 
         lru.refer(5);
-
 
        //  lru.printList();
 

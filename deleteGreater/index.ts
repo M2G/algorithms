@@ -1,6 +1,6 @@
 /*  eslint-disable */
 
-
+// class to get a new node 
 class Node {
     constructor(data) {
         this.data = data;
@@ -37,7 +37,7 @@ add(element) {
         // add node 
         current.next = node; 
     } 
-    this.size++; 
+    this.size += 1; 
 }  
 
 printList() { 
@@ -50,7 +50,8 @@ printList() {
     console.log(str); 
 }   
 
-
+// function to delete all the nodes from the list 
+// that are greater than the specified value x 
 deleteGreater(value) { 
 
     let tmp = this.head;
@@ -60,25 +61,35 @@ deleteGreater(value) {
         return false;
     } 
  
-  
+    // If head node itself holds the value greater than 'x' 
     if (tmp?.data > value) {
         this.head = tmp.next;
       console.log('this.head', this.head)
         tmp = this.head;
        console.log('tmp', tmp)
     }
+
+    // Delete occurrences other than head 
     while (tmp) { 
+
+        // Search for the node to be deleted,  
+        // keep track of the previous node as we  
+        // need to change 'prev->next' 
        while(tmp?.data <= value) {
           prev = tmp;
           tmp = tmp.next;
         }
-
+        // If required value node was not present 
+        // in linked list 
         if (!tmp) {
-            return;
+          return false;
         }
-  
-        prev.next = tmp.next
 
+       // Unlink the node from linked list 
+        prev.next = tmp.next;
+
+        // Update Temp for next iteration of
+        // outer loop 
         tmp = prev.next;
       }
     }
