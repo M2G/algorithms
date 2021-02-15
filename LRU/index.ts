@@ -96,8 +96,6 @@ contains(value): boolean {
   var node = this.head;
 
   while (node) {
-
-
   // console.log('node', node?.element)
 
     if (node?.element === value) {
@@ -118,12 +116,12 @@ deleteFirstNode(){
 
 printList() { 
     var curr = this.head; 
-    var str = ""; 
+    var str = []; 
     while (curr) { 
-        str += curr.element + " "; 
+        str.push(curr.element); 
         curr = curr.next; 
     } 
-    console.log(str); 
+    console.log(str.reverse()); 
 } 
 
 
@@ -155,7 +153,7 @@ class LRUCache {
   }
 
 
-  public refer(key: number){
+  public refer(key: number): void {
         if(this.get(key) === false){
             this.put(key);
         }
@@ -164,18 +162,21 @@ class LRUCache {
   public get(key: number): boolean {
 
   console.log('key', key)
-      console.log(':::::', this.list.contains(key))
+
 
       if(!this.list.contains(key)){
           return false;
       }
+
+  console.log('key key key', key)
+            console.log(':::::', this.list.contains(key))
 
       this.list.removeFrom(key);
       this.list.add(key); 
       return true;
   }
 
-    public put(key: number): boolean {
+    public put(key: number): void {
         if(this.list.size_of_list() === this.CACHE_SIZE){
             this.list.deleteFirstNode();
         }
@@ -183,19 +184,13 @@ class LRUCache {
         this.list.add(key);
     }
 
-    printList() { 
-    var curr = this.head; 
-    var str = ""; 
-    while (curr) { 
-        str += curr.element + " "; 
-        curr = curr.next; 
+    display() { 
+       this.list.printList();
     } 
-    console.log(str); 
-} 
 }
 
 
-
+ 
 
 function main(){
 
@@ -208,7 +203,7 @@ function main(){
         lru.refer(4); 
         lru.refer(5);
 
-       //  lru.printList();
+        lru.display();
 
 }
 
