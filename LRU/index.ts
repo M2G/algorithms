@@ -21,120 +21,108 @@ class LinkedList {
     } 
 
 
-size_of_list(): number { 
-    console.log(this.size); 
-    return this.size;
-} 
+    size_of_list(): number { 
+        console.log(this.size); 
+        return this.size;
+    } 
 
-// removes an element from the 
-// specified location 
-removeFrom(index) { 
-    if (index > 0 && index > this.size) 
-        return -1; 
-    else { 
-        var curr, prev, it = 0; 
-        curr = this.head; 
-        prev = curr; 
+    // removes an element from the 
+    // specified location 
+    removeFrom(index: number) { 
+        if (index > 0 && index > this.size) 
+            return -1; 
+        else { 
+            let curr;
+            let prev;
+            let it = 0; 
+            curr = this.head; 
+            prev = curr; 
 
-        // deleting first element 
-        if (index === 0) { 
-            this.head = curr.next; 
+            // deleting first element 
+            if (index === 0) { 
+                this.head = curr.next; 
+            } else { 
+                // iterate over the list to the 
+                // position to removce an element 
+                while (it < index) { 
+                    it += 1; 
+                    prev = curr; 
+                    curr = curr.next; 
+                } 
+
+                // remove the element 
+                prev.next = curr.next; 
+            } 
+            this.size -= 1; 
+
+            // return the remove element 
+            return curr.element; 
+        } 
+    } 
+
+
+    // adds an element at the end 
+    // of list 
+    add(element) { 
+        // creates a new node 
+        let node = new Node(element); 
+
+        // to store current node 
+        let current; 
+
+        // if list is Empty add the 
+        // element and make it head 
+        if (this.head == null) {
+            this.head = node; 
         } else { 
-            // iterate over the list to the 
-            // position to removce an element 
-            while (it < index) { 
-                it += 1; 
-                prev = curr; 
-                curr = curr.next; 
+            current = this.head; 
+
+            // iterate to the end of the 
+            // list 
+            while (current.next) { 
+                current = current.next; 
             } 
 
-            // remove the element 
-            prev.next = curr.next; 
+            // add node 
+            current.next = node; 
         } 
-        this.size -= 1; 
+        this.size += 1; 
+    }
 
-        // return the remove element 
-        return curr.element; 
-    } 
-} 
+    contains(value): boolean {
 
+        if(!value){
+            return false;
+        }
 
-// adds an element at the end 
-// of list 
-add(element) { 
-    // creates a new node 
-    var node = new Node(element); 
+      let node = this.head;
 
-    // to store current node 
-    var current; 
+      while (node) {
+        if (node?.element === value) {
+          return true;
+        }
+        node = node.next;
+      }
+      return false;
+    }; 
 
-    // if list is Empty add the 
-    // element and make it head 
-    if (this.head == null) 
-        this.head = node; 
-    else { 
-        current = this.head; 
+    deleteFirstNode(){
+        if (!this.head){
+            return;
+        }
+        this.head = this.head.next;
+        return this.head;
+    }
 
-        // iterate to the end of the 
-        // list 
-        while (current.next) { 
-            current = current.next; 
+    printList() { 
+        var curr = this.head; 
+        var str = []; 
+        while (curr) { 
+            str.push(curr.element); 
+            curr = curr.next; 
         } 
-
-        // add node 
-        current.next = node; 
+        console.log(str.reverse()); 
     } 
-    this.size += 1; 
-}
-
-contains(value): boolean {
-
-    if(!value){
-        return false;
-    }
-
-  var node = this.head;
-
-  while (node) {
-  // console.log('node', node?.element)
-
-    if (node?.element === value) {
-      return true;
-    }
-    node = node.next;
-  }
-  return false;
-}; 
-
-deleteFirstNode(){
-    if (!this.head){
-        return;
-    }
-    this.head = this.head.next;
-    return this.head;
-}
-
-printList() { 
-    var curr = this.head; 
-    var str = []; 
-    while (curr) { 
-        str.push(curr.element); 
-        curr = curr.next; 
-    } 
-    console.log(str.reverse()); 
-} 
-
-
-    // functions to be implemented 
-    // add(element) 
-    // insertAt(element, location) 
-    // removeFrom(location) 
-    // removeElement(element) 
-
-    // Helper Methods 
-    // isEmpty 
-    // size_Of_List 
-    // PrintList 
 } 
 
 
