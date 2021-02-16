@@ -7,13 +7,13 @@
     "url": "https://github.com/M2G/algorithms/issues"
   },
   "scripts": {
-    "start2": "nodemon ./LRU/index.js",
+    "start2": "npm run serve2",
     "start": "npm run serve",
     "build": "npm run build-ts && npm run tslint",
     "serve": "node --experimental-modules --harmony-top-level-await build/index.js",
-    "serve2": "node --experimental-modules --harmony-top-level-await build/LRU/index.js",
+    "serve2": "node --experimental-modules --harmony-top-level-await build/sum-non-diagonal-parts-of-a-square-matrix/index.js",
     "watch-node": "nodemon build/index.js",
-    "watch-node2": "nodemon build/LRU/index.js",
+    "watch-node2": "nodemon build/sum-non-diagonal-parts-of-a-square-matrix/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch2": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node2\"",
     "watch-test": "npm run test -- --watchAll",
