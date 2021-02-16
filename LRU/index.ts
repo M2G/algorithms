@@ -142,7 +142,7 @@ class LRUCache {
 
 
   public refer(key: number): void {
-        if(this.get(key) === false){
+        if (!this.get(key)){
             this.put(key);
         }
   }
