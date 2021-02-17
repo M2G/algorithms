@@ -5,11 +5,28 @@
 /*
  _ _ _ _ _ _ _ _
 |                |
-|   1  2  3  4   |
-|   5  6  7  8   |
+|  1  2   3   4  |
+|  5  6   7   8  |
 |  9  10  11  12 |
 | 13  14  15  16 |
 |_ _ _ _ _ _ _ _ |
+
+
+2, 3   : Top portion of the matrix 
+5, 9   : Left portion of the matrix 
+14, 15 : Bottom portion of the matrix 
+8, 12  : Right portion of the matrix 
+
+without diagonal : 
+
+1, 6, 11, 16
+4, 7, 10, 13
+
+
+First diag : index row = index column
+	row = column
+Second diag : sum index row and sum index colmun = N( matrix size )
+	numberOfRows - column -1
 
 */
 
@@ -20,7 +37,7 @@ function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number {
 	let sumPartRight: number = 0;
 	let total: number = 0;
 
-	if (!array?.length) {
+	if (!array?.length && !n) {
 		return [];	
 	}
 
