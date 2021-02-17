@@ -2,17 +2,6 @@
 
 // Input: arr[][] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}
 
-
-const array: [number, number, number, number][] = [
-       [ 1, 2, 3, 4 ], 
-       [ 5, 6, 7, 8 ], 
-       [ 9, 10, 11, 12 ], 
-       [ 13, 14, 15, 16 ]
-     ];
-
-
-const n: number = 4;
-
 function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number {
 	let sumPartTop: number = 0;
 	let sumPartLeft: number = 0;
@@ -42,14 +31,16 @@ function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number {
 
 					sumPartTop += array[i][j];
 
-						console.log('sumPartTop', sumPartTop)
+						console.log('sumPartTop', { i, j })
 
-				} else if (i !== j )  {
+				} else if (i !== j)  {
 
 					sumPartLeft += array[i][j];
 
-								console.log('sumPartLeft', sumPartLeft)
+								console.log('sumPartLeft', { i, j })
 				}
+			} else {
+					console.log('else', { i, j })
 			}
 		}
 	}
@@ -58,6 +49,17 @@ function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number {
 
 
 function main(){
+
+	const array: [number, number, number, number][] = [
+         [ 1, 2, 3, 4 ], 
+         [ 5, 6, 7, 8 ], 
+        [ 9, 10, 11, 12 ], 
+        [ 13, 14, 15, 16 ]
+     ];
+
+
+	const n: number = 4;
+
 	sumNonDiagonalPartsOfASquareMatrix(array, n); 
 }
 
