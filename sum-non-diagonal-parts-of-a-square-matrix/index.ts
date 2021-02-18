@@ -3,14 +3,17 @@
 // Input: arr[][] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}
 
 /*
- _ _ _ _ _ _ _ _
-|                |
-|  1  2   3   4  |
-|  5  6   7   8  |
-|  9  10  11  12 |
-| 13  14  15  16 |
-|_ _ _ _ _ _ _ _ |
 
+						
+	 _ _ _ _ _ _ _ _	row
+	|                | 	| 
+	|  1  2   3   4  | 	|
+	|  5  6   7   8  | 	|
+	|  9  10  11  12 | 	|
+	| 13  14  15  16 | 	|
+	|_ _ _ _ _ _ _ _ | 	|
+
+	 _ _ _ _ _ _ _ _ column
 
 2, 3   : Top portion of the matrix 
 5, 9   : Left portion of the matrix 
@@ -45,9 +48,9 @@ function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number {
 	console.log('array', array)
 
 
-	for (let i = 0; i < array.length; i += 1) {
-		for (let j = 0; j < array.length; j += 1) {
-			// console.log('array', array[i][j])
+	for (let i = 0; i < n; i += 1) {
+		for (let j = 0; j < n; j += 1) {
+			console.log('array array array array', array[i])
 
 
 			// TOP + LEFT
