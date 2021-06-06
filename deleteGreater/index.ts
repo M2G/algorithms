@@ -2,19 +2,19 @@
 
 // class to get a new node 
 class Node {
-    constructor(data) {
+    public constructor(data: number) {
         this.data = data;
         this.next = null;
     } 
 } 
 
 class LinkedList {
-     constructor() { 
+     public constructor() { 
         this.head = null; 
         this.size = 0; 
     } 
 
-add(element) { 
+add(element: number) { 
     // creates a new node 
     const node = new Node(element); 
   
@@ -52,7 +52,7 @@ printList() {
 
 // function to delete all the nodes from the list 
 // that are greater than the specified value x 
-deleteGreater(value) { 
+deleteGreater(value: number) { 
 
     let tmp = this.head;
     let prev = null; 
@@ -121,7 +121,7 @@ function main(){
 
     list.printList(); 
 
-    const test = list.deleteGreater(7); 
+    list.deleteGreater(7); 
 
     // console.log('test', test)
 
