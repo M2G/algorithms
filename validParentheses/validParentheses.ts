@@ -1,6 +1,6 @@
-function validParentheses(s){
+function validParentheses(s: string | any[]){
   const stack = [];
-  
+
   for (let i = 0; i < s.length; i += 1) {
     const top = stack[stack.length - 1];
     if (s[i] === '(' || s[i] === '{' || s[i] === '[') {
@@ -16,7 +16,7 @@ function validParentheses(s){
       return false;
     }
   }
-  
+
   return stack.length === 0;
 }
 

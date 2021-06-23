@@ -1,4 +1,4 @@
-function selectionSort(array) {
+function selectionSort(array: string | any[]) {
 
   if (array.length < 1) {
     return array;

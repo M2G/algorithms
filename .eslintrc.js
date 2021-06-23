@@ -20,14 +20,14 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/all",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:jest/recommended"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   parserOptions: {
     project: path.resolve(__dirname, './tsconfig.json'),
     tsconfigRootDir: __dirname,
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
+    extraFileExtensions: [".scss"]
   },
   plugins: ["@typescript-eslint", "jest", "prettier"],
   rules: {
@@ -54,6 +54,7 @@ module.exports = {
     "sort-imports": 0,
     "implicit-arrow-linebreak": 0,
 
+    "import/no-cycle": 1,
     "import/extensions": "off",
     "import/no-unresolved": 0,
     "import/prefer-default-export": 0,
@@ -74,9 +75,10 @@ module.exports = {
     "@typescript-eslint/quotes": 0,
     "@typescript-eslint/restrict-template-expressions": 0,
     "@typescript-eslint/unbound-method": 1,
-    "@typescript-eslint/consistent-type-assertions": 1,
-    "@typescript-eslint/ban-ts-comment": 1,
-    "@typescript-eslint/prefer-readonly-parameter-types": 1,
+    "@typescript-eslint/no-unsafe-assignment": 1,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-unsafe-member-access": 1,
+    "@typescript-eslint/no-unsafe-call": 1
   },
   settings: {
     "html/html-extensions": [".html"],
@@ -91,8 +93,8 @@ module.exports = {
   },
   env: {
     browser: true,
-    jasmine: true,
     jest: true,
+    jasmine: true,
     node: true
   }
 };
