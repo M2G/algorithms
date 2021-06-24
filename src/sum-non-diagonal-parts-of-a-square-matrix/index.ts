@@ -4,9 +4,9 @@
 
 /*
 
-						
+
 	 _ _ _ _ _ _ _ _	row
-	|                | 	| 
+	|                | 	|
 	|  1  2   3   4  | 	|
 	|  5  6   7   8  | 	|
 	|  9  10  11  12 | 	|
@@ -15,12 +15,12 @@
 
 	 _ _ _ _ _ _ _ _ column
 
-2, 3   : Top portion of the matrix 
-5, 9   : Left portion of the matrix 
-14, 15 : Bottom portion of the matrix 
-8, 12  : Right portion of the matrix 
+2, 3   : Top portion of the matrix
+5, 9   : Left portion of the matrix
+14, 15 : Bottom portion of the matrix
+8, 12  : Right portion of the matrix
 
-without diagonal : 
+without diagonal :
 
 1, 6, 11, 16
 4, 7, 10, 13
@@ -41,7 +41,7 @@ function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number | [] 
 	let total: number = 0;
 
 	if (!array?.length && !n) {
-		return [];	
+		return [];
 	}
 
 
@@ -90,14 +90,12 @@ function sumNonDiagonalPartsOfASquareMatrix(array = [], n: number): number | [] 
 
 					console.log('sumPartRight', { i, j, sumPartRight })
 
-
 				}
-				
 			}
 		}
 	}
 
-	total = 
+	total =
 	+ sumPartTop
 + sumPartLeft
 + sumPartBottom
@@ -112,16 +110,16 @@ console.log('total', total)
 function main(){
 
 	const array: [number, number, number, number][] = [
-         [ 1, 2, 3, 4 ], 
-         [ 5, 6, 7, 8 ], 
-        [ 9, 10, 11, 12 ], 
+         [ 1, 2, 3, 4 ],
+         [ 5, 6, 7, 8 ],
+        [ 9, 10, 11, 12 ],
         [ 13, 14, 15, 16 ]
      ];
 
 
 	const n: number = 4;
 
-	sumNonDiagonalPartsOfASquareMatrix(array, n); 
+	sumNonDiagonalPartsOfASquareMatrix(array, n);
 }
 
 main();
