@@ -1,4 +1,4 @@
-/*  eslint-disable */
+/* eslint-disable */
 
 // class to get a new node
 class Node {

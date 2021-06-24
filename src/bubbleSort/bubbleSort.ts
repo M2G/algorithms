@@ -1,4 +1,5 @@
-function swap(arr,a, b){
+/* eslint-disable*/
+function swap(arr: number[], a: number, b: number){
     let temp;
     temp = arr[a];
     arr[a] = arr[b];

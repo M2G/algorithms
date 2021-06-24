@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * Javascript implementation of insertionSort
  * Complexity: O(n^2)

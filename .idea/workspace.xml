@@ -2,32 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef0cd649-cbb1-4868-87e9-4f1813daecc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ find_minimum_number_of_coins/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rotateMatrix/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindDistinctCommon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ find_minimum_number_of_coins/test/find_minimum_number_of_coins.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LRU/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRU/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LRU/test/lru.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRU/test/lru.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubbleSort/bubbleSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bubbleSort/bubbleSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubbleSort/test/bubbleSort.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bubbleSort/test/bubbleSort.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleteGreater/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteGreater/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleteGreater/test/deleteGreater.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteGreater/test/deleteGreater.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findDuplicates/findDuplicates.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/findDuplicates/findDuplicates.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fizzbuzz/fizzBuzz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertionSort/insertionSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/insertionSort/insertionSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertionSort/test/insertionSort.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/insertionSort/test/insertionSort.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiplyMatrix/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindDistinctCommon/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindrome/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickSort/quickSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/quickSort/quickSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickSort/test/quickSort.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/quickSort/test/quickSort.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotateMatrix/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplyMatrix/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selectionSort/selectionSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectionSort/selectionSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selectionSort/test/selectionSort.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectionSort/test/selectionSort.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sum-non-diagonal-parts-of-a-square-matrix/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unique/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unique/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validParentheses/test/validParentheses.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validParentheses/test/validParentheses.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validParentheses/validParentheses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validParentheses/validParentheses.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bubbleSort/bubbleSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bubbleSort/bubbleSort.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deleteGreater/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteGreater/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/insertionSort/insertionSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/insertionSort/insertionSort.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selectionSort/selectionSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectionSort/selectionSort.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624492556501</updated>
-      <workItem from="1624492557613" duration="2238000" />
+      <workItem from="1624492557613" duration="3755000" />
     </task>
     <servers />
   </component>
