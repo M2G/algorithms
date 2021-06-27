@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef0cd649-cbb1-4868-87e9-4f1813daecc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bubbleSort/bubbleSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bubbleSort/bubbleSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deleteGreater/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteGreater/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/insertionSort/insertionSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/insertionSort/insertionSort.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/selectionSort/selectionSort.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectionSort/selectionSort.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LRU/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRU/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624492556501</updated>
-      <workItem from="1624492557613" duration="3755000" />
+      <workItem from="1624492557613" duration="7881000" />
     </task>
     <servers />
   </component>

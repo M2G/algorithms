@@ -2,94 +2,98 @@
 //@ts-ignore
 
 
-// User defined class node 
-class Node { 
-    // constructor 
-    constructor(element) 
-    { 
-        this.element = element; 
+// User defined class node
+class Node {
+    // constructor
+  private element: any;
+  private next: any;
+    constructor(element: any)
+    {
+        this.element = element;
         this.next = null
-    } 
-} 
+    }
+}
 
 
-// linkedlist class 
-class LinkedList { 
-    constructor() { 
-        this.head = null; 
-        this.size = 0; 
-    } 
-
-
-    size_of_list(): number { 
-        console.log(this.size); 
-        return this.size;
-    } 
-
-    // removes an element from the 
-    // specified location 
-    removeFrom(index: number) { 
-        if (index > 0 && index > this.size) 
-            return -1; 
-        else { 
-            let curr;
-            let prev;
-            let it = 0; 
-            curr = this.head; 
-            prev = curr; 
-
-            // deleting first element 
-            if (index === 0) { 
-                this.head = curr.next; 
-            } else { 
-                // iterate over the list to the 
-                // position to removce an element 
-                while (it < index) { 
-                    it += 1; 
-                    prev = curr; 
-                    curr = curr.next; 
-                } 
-
-                // remove the element 
-                prev.next = curr.next; 
-            } 
-            this.size -= 1; 
-
-            // return the remove element 
-            return curr.element; 
-        } 
-    } 
-
-
-    // adds an element at the end 
-    // of list 
-    add(element) { 
-        // creates a new node 
-        let node = new Node(element); 
-
-        // to store current node 
-        let current; 
-
-        // if list is Empty add the 
-        // element and make it head 
-        if (this.head == null) {
-            this.head = node; 
-        } else { 
-            current = this.head; 
-
-            // iterate to the end of the 
-            // list 
-            while (current.next) { 
-                current = current.next; 
-            } 
-
-            // add node 
-            current.next = node; 
-        } 
-        this.size += 1; 
+// linkedlist class
+class LinkedList {
+  private head: any;
+  private size: any;
+    constructor() {
+        this.head = null;
+        this.size = 0;
     }
 
-    contains(value): boolean {
+
+    size_of_list(): number {
+        console.log(this.size);
+        return this.size;
+    }
+
+    // removes an element from the
+    // specified location
+    removeFrom(index: number) {
+        if (index > 0 && index > this.size)
+            return -1;
+        else {
+            let curr;
+            let prev;
+            let it = 0;
+            curr = this.head;
+            prev = curr;
+
+            // deleting first element
+            if (index === 0) {
+                this.head = curr.next;
+            } else {
+                // iterate over the list to the
+                // position to removce an element
+                while (it < index) {
+                    it += 1;
+                    prev = curr;
+                    curr = curr.next;
+                }
+
+                // remove the element
+                prev.next = curr.next;
+            }
+            this.size -= 1;
+
+            // return the remove element
+            return curr.element;
+        }
+    }
+
+
+    // adds an element at the end
+    // of list
+    add(element: number) {
+        // creates a new node
+        let node = new Node(element);
+
+        // to store current node
+        let current;
+
+        // if list is Empty add the
+        // element and make it head
+        if (this.head == null) {
+            this.head = node;
+        } else {
+            current = this.head;
+
+            // iterate to the end of the
+            // list
+            while (current.next) {
+                current = current.next;
+            }
+
+            // add node
+            current.next = node;
+        }
+        this.size += 1;
+    }
+
+    contains(value: any): boolean {
 
         if(!value){
             return false;
@@ -104,7 +108,7 @@ class LinkedList {
         node = node.next;
       }
       return false;
-    }; 
+    };
 
     deleteFirstNode(){
         if (!this.head){
@@ -114,25 +118,25 @@ class LinkedList {
         return this.head;
     }
 
-    printList() { 
-        var curr = this.head; 
-        var str = []; 
-        while (curr) { 
-            str.push(curr.element); 
-            curr = curr.next; 
-        } 
-        console.log(str.reverse()); 
-    } 
-} 
+    printList() {
+        var curr = this.head;
+        var str = [];
+        while (curr) {
+            str.push(curr.element);
+            curr = curr.next;
+        }
+        console.log(str.reverse());
+    }
+}
 
 
 
 
 
 class LRUCache {
-  // maximum capacity of cache 
-  private CACHE_SIZE;
-  private list;
+  // maximum capacity of cache
+  private CACHE_SIZE: number;
+  private list: LinkedList;
 
   public constructor(capacity: number){
       this.list = new LinkedList();
@@ -160,7 +164,7 @@ class LRUCache {
             console.log(':::::', this.list.contains(key))
 
       this.list.removeFrom(key);
-      this.list.add(key); 
+      this.list.add(key);
       return true;
   }
 
@@ -172,13 +176,13 @@ class LRUCache {
         this.list.add(key);
     }
 
-    display() { 
+    display() {
        this.list.printList();
-    } 
+    }
 }
 
 
- 
+
 
 function main(){
 
@@ -188,7 +192,7 @@ function main(){
         lru.refer(2);
         lru.refer(3);
         lru.refer(1);
-        lru.refer(4); 
+        lru.refer(4);
         lru.refer(5);
 
         lru.display();
