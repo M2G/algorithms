@@ -33,7 +33,7 @@ Second diag : sum index row and sum index colmun = N( matrix size )
 
 */
 
-function sumNonDiagonalPartsOfASquareMatrix(array :any[] = [], n: number): any {
+function sumNonDiagonalPartsOfASquareMatrix(array :any[] = [], n: number): number {
 	let sumPartTop: number = 0;
 	let sumPartLeft: number = 0;
 	let sumPartBottom: number = 0;
@@ -41,7 +41,7 @@ function sumNonDiagonalPartsOfASquareMatrix(array :any[] = [], n: number): any {
 	let total: number = 0;
 
 	if (!array?.length && !n) {
-		return [];
+		return 0;
 	}
 
 
@@ -103,10 +103,13 @@ function sumNonDiagonalPartsOfASquareMatrix(array :any[] = [], n: number): any {
 
 console.log('total', total)
 
+	return total;
+
 }
 
 
 
+// @ts-ignore
 function main(){
 
 	const array: [number, number, number, number][] = [

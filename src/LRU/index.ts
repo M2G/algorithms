@@ -1,21 +1,19 @@
 /* eslint-disable */
-//@ts-ignore
-
-
-// User defined class node
+// @ts-ignore
 class Node {
-    // constructor
-  private element: any;
+  // @ts-ignore
+  private element: number;
+  // @ts-ignore
   private next: any;
-    constructor(element: any)
-    {
+   public constructor(element: number) {
         this.element = element;
-        this.next = null
+        this.next = null;
     }
 }
 
 
 // linkedlist class
+// @ts-ignore
 class LinkedList {
   private head: any;
   private size: any;
@@ -25,17 +23,17 @@ class LinkedList {
     }
 
 
-    size_of_list(): number {
-        console.log(this.size);
+    sizeOfList(): number {
+        console.log("sizeOfList", this.size);
         return this.size;
     }
 
     // removes an element from the
     // specified location
     removeFrom(index: number) {
-        if (index > 0 && index > this.size)
+        if (index > 0 && index > this.size) {
             return -1;
-        else {
+        } else {
             let curr;
             let prev;
             let it = 0;
@@ -69,14 +67,15 @@ class LinkedList {
     // of list
     add(element: number) {
         // creates a new node
-        let node = new Node(element);
+        // @ts-ignore
+      let node = new Node(element);
 
         // to store current node
         let current;
 
         // if list is Empty add the
         // element and make it head
-        if (this.head == null) {
+        if (this.head === null) {
             this.head = node;
         } else {
             current = this.head;
@@ -119,8 +118,8 @@ class LinkedList {
     }
 
     printList() {
-        var curr = this.head;
-        var str = [];
+        let curr = this.head;
+        const str = [];
         while (curr) {
             str.push(curr.element);
             curr = curr.next;
@@ -128,10 +127,6 @@ class LinkedList {
         console.log(str.reverse());
     }
 }
-
-
-
-
 
 class LRUCache {
   // maximum capacity of cache
@@ -153,15 +148,11 @@ class LRUCache {
 
   public get(key: number): boolean {
 
-  console.log('key', key)
-
-
-      if(!this.list.contains(key)){
+      if (!this.list.contains(key)){
           return false;
       }
 
-  console.log('key key key', key)
-            console.log(':::::', this.list.contains(key))
+    console.log(':::::', { contains: this.list.contains(key), key })
 
       this.list.removeFrom(key);
       this.list.add(key);
@@ -169,7 +160,7 @@ class LRUCache {
   }
 
     public put(key: number): void {
-        if(this.list.size_of_list() === this.CACHE_SIZE){
+        if (this.list.sizeOfList() === this.CACHE_SIZE){
             this.list.deleteFirstNode();
         }
 
@@ -184,9 +175,10 @@ class LRUCache {
 
 
 
+// @ts-ignore
 function main(){
 
-    const lru = new LRUCache(4);
+    const lru = new LRUCache(5);
 
         lru.refer(1);
         lru.refer(2);

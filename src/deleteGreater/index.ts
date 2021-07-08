@@ -27,7 +27,7 @@ add(element: number) {
 
     // if list is Empty add the
     // element and make it head
-    if (this.head == null) {
+    if (this.head === null) {
         this.head = node;
     } else {
         current = this.head;
