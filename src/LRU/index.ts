@@ -1,10 +1,8 @@
 /* eslint-disable */
 // @ts-ignore
 class Node {
-  // @ts-ignore
-  private element: number;
-  // @ts-ignore
-  private next: any;
+   element: number;
+   next: any;
    public constructor(element: number) {
         this.element = element;
         this.next = null;
@@ -15,7 +13,7 @@ class Node {
 // linkedlist class
 // @ts-ignore
 class LinkedList {
-  private head: any;
+  private head: Node;
   private size: any;
     constructor() {
         this.head = null;
@@ -127,6 +125,12 @@ class LinkedList {
         console.log(str.reverse());
     }
 }
+
+/**
+ * Javascript implementation of
+ * Complexity: O(n^2)
+ * In Place Sorting: True
+ */
 
 class LRUCache {
   // maximum capacity of cache

@@ -1,18 +1,23 @@
 /* eslint-disable */
 
 // class to get a new node
+// @ts-ignore
+/*
 class Node {
-    data: number;
-    next: null;
+  // @ts-ignore
+  private data: number;
+  // @ts-ignore
+  private next: null;
     public constructor(data: number) {
         this.data = data;
         this.next = null;
     }
 }
 
+// @ts-ignore
 class LinkedList {
-    private head: Node;
-    private size: number;
+    head: Node;
+    size: number;
      public constructor() {
         this.head = null;
         this.size = 0;
@@ -106,6 +111,8 @@ function main(){
     const list = new LinkedList();
 
 /*
+
+ // remove
     list.add(7);
     list.add(3);
     list.add(4);
@@ -114,7 +121,7 @@ function main(){
     list.add(1);
 */
 
-
+/*
     list.add(1);
     list.add(8);
     list.add(7);
@@ -134,3 +141,4 @@ function main(){
 }
 
 main();
+*/

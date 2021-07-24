@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LRU/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRU/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/deleteGreater/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deleteGreater/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sum-non-diagonal-parts-of-a-square-matrix/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/greedy_algorithm/find_minimum_number_of_coins/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy_algorithm/find_minimum_number_of_coins/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
       <recent name="$PROJECT_DIR$/ find_minimum_number_of_coins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/greedy_algorithm" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -55,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624492556501</updated>
-      <workItem from="1624492557613" duration="14478000" />
+      <workItem from="1624492557613" duration="30973000" />
     </task>
     <servers />
   </component>
