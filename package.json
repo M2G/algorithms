@@ -13,7 +13,7 @@
     "serve": "node --experimental-modules --harmony-top-level-await build/index.js",
     "serve2": "node --experimental-modules --harmony-top-level-await build/sum-non-diagonal-parts-of-a-square-matrix/index.js",
     "watch-node": "nodemon build/index.js",
-    "watch-node2": "nodemon build/sum-non-diagonal-parts-of-a-square-matrix/index.js",
+    "watch-node2": "nodemon build/dijkstras-shortest-path-algorithm/dijkstras-shortest-path-algorithm.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch2": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node2\"",
     "watch-test": "npm run test -- --watchAll",
