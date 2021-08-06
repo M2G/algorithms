@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef0cd649-cbb1-4868-87e9-4f1813daecc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dijkstras-shortest-path-algorithm-greedy-algo/dijkstras-shortest-path-algorithm-greedy-algo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dijkstras-shortest-path-algorithm/dijkstras-shortest-path-algorithm.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy_algorithm/find_minimum_number_of_coins/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy_algorithm/find_minimum_number_of_coins/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dijkstras-shortest-path-algorithm/dijkstras-shortest-path-algorithm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dijkstras-shortest-path-algorithm/dijkstras-shortest-path-algorithm.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,8 @@
       <option name="presentableId" value="Default" />
       <updated>1624492556501</updated>
       <workItem from="1624492557613" duration="39534000" />
-      <workItem from="1627512676208" duration="6159000" />
+      <workItem from="1627512676208" duration="7056000" />
+      <workItem from="1628206231413" duration="2210000" />
     </task>
     <servers />
   </component>

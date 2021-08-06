@@ -11,7 +11,7 @@ let graph: number[][] = [
   [ 0, 0, 2, 0, 0, 0, 6, 7, 0 ]
 ];
 
-function dijkstra(graph, src)
+function dijkstra(graph: string | any[], src: string | number)
 {
   let dist: number[] = [];
   let sptSet: number[] = [];
@@ -25,19 +25,24 @@ function dijkstra(graph, src)
   dist[src] = 0;
 
   // Find shortest path for all vertices
-  for(let count = 0; count < graph.length; count++)
+  for(let count = 0; count < graph.length - 1; count += 1)
   {
+
+    const u = minDist(dist, sptSet)
+
+    // console.log("u", u);
 
   }
 }
 
-function minDist(dist,sptSet): number {
+function minDist(dist, sptSet): number {
 
   let min = Number.MAX_VALUE;
-  let min_index = 0;
+  let minIndex = 0;
 
   for(let i = 0; i < graph.length; i += 1)
   {
+    console.log('--------')
     console.log('!sptSet', !sptSet)
 
     if (!sptSet && dist[i] <= min) {
@@ -45,3 +50,5 @@ function minDist(dist,sptSet): number {
     }
   }
 }
+
+dijkstra(graph, 0);
