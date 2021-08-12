@@ -16,10 +16,10 @@ function dijkstra(graph: string | any[], src: string | number)
   let dist: number[] = [];
   let sptSet: number[] = [];
 
-  for(let i = 0; i < graph.length; i++)
+  for(let i = 0; i < graph.length; i += 1)
   {
     dist[i] = Number.MAX_VALUE;
-    sptSet[i] = Number(false);
+    sptSet[i] = 0;
   }
 
   dist[src] = 0;
@@ -35,20 +35,21 @@ function dijkstra(graph: string | any[], src: string | number)
   }
 }
 
-function minDist(dist, sptSet): number {
+function minDist(dist: number[], sptSet: number[]): number {
 
   let min = Number.MAX_VALUE;
-  let minIndex = 0;
+  let minIndex = -1;
 
   for(let i = 0; i < graph.length; i += 1)
   {
-    console.log('--------')
-    console.log('!sptSet', !sptSet)
-
-    if (!sptSet && dist[i] <= min) {
-
-    }
+    if (!sptSet[i] && dist[i] <= min)
+        min = dist[i];
+        minIndex = i;
+        console.log(':::::::', { min,
+          minIndex
+        });
   }
+  return minIndex;
 }
 
 dijkstra(graph, 0);
