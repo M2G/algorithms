@@ -14,12 +14,13 @@ let graph: number[][] = [
 function dijkstra(graph: string | any[], src: string | number)
 {
   let dist: number[] = [];
-  let sptSet: number[] = [];
+  let sptSet: boolean[] = [];
 
   for(let i = 0; i < graph.length; i += 1)
   {
     dist[i] = Number.MAX_VALUE;
-    sptSet[i] = 0;
+    sptSet[i] = !!sptSet[i];
+
   }
 
   dist[src] = 0;
@@ -28,14 +29,17 @@ function dijkstra(graph: string | any[], src: string | number)
   for(let count = 0; count < graph.length - 1; count += 1)
   {
 
-    const u = minDist(dist, sptSet)
+    const v = minDist(dist, sptSet)
 
-    // console.log("u", u);
+    sptSet[v] = !sptSet[v];
 
+    for (let count = 0; count < graph.length; count += 1) {
+
+    }
   }
 }
 
-function minDist(dist: number[], sptSet: number[]): number {
+function minDist(dist: number[], sptSet: boolean[]): number {
 
   let min = Number.MAX_VALUE;
   let minIndex = -1;
@@ -45,9 +49,6 @@ function minDist(dist: number[], sptSet: number[]): number {
     if (!sptSet[i] && dist[i] <= min)
         min = dist[i];
         minIndex = i;
-        console.log(':::::::', { min,
-          minIndex
-        });
   }
   return minIndex;
 }
