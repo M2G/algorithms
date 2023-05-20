@@ -1,34 +1,43 @@
-/* eslint-disable */
 
-function quicksort(list?: number[]) {
 
-  //@ts-ignore
-  if (list.length < 2) {
-    return list;
-  }
-  //@ts-ignore
-  const pivot = list[list.length - 1];
-  let small = [];
-  let high = [];
-  //@ts-ignore
-  for (let i = 0; i < list.length; i++) {
-    //@ts-ignore
-    if (list[i] < pivot) {
-      //@ts-ignore
-      small.push(list[i]);
-    }
-    //@ts-ignore
-    if (list[i] > pivot) {
-      //@ts-ignore
-      high.push(list[i]);
-    }
-  }
+/**
+ * Javascript implementation of Quick Sort Algorithm
+ * Complexity: O(N log(N))
+ */
+
+function quickSort(list?: number[]): number[] {
+
+  if (!list) return [];
+
+  if (list && list.length < 2) return list;
+ 
+
+  const pivot = list[0]; // pivot point is the first element
+  let small = []; // elements < the pivot value
+  let high = []; // elements greater >= the pivot value
+
+  for (let i = 1; i < list.length; i += 1) {
+      if (list[i] < pivot) {
+        small.push(list[i]);
+        continue;
+      }
+
+      if (list[i] > pivot) {
+        high.push(list[i]);
+        continue;
+      }
+   }
+
+   console.log('pivot', pivot) // 4
+   console.log('small', small) // [2, 3, 1]
+   console.log('high', high) // [8, 6, 9]
 
   return [
-    ...quicksort(small),
+    ...quickSort(small),
     pivot,
-    ...quicksort(high),
+    ...quickSort(high),
   ];
 }
 
-export default quicksort;
+export default quickSort;
+

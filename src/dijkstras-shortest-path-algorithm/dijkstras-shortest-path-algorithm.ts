@@ -29,17 +29,26 @@ function dijkstra(graph: string | any[], src: string | number)
   for(let count = 0; count < graph.length - 1; count += 1)
   {
 
-    const v = minDist(dist, sptSet)
+    const v = minDist(graph, dist, sptSet)
 
     sptSet[v] = !sptSet[v];
 
     for (let count = 0; count < graph.length; count += 1) {
-
+      if (!sptSet[count]
+        && graph[count][v] !== 0
+        && dist[count] !== Number.MAX_VALUE
+        && dist[count] + graph[count][v] < dist[v])
+      {
+        dist[v] = dist[count] + graph[count][v];
+      }
     }
+
+
+
   }
 }
 
-function minDist(dist: number[], sptSet: boolean[]): number {
+function minDist(graph: string | any[], dist: number[], sptSet: boolean[]): number {
 
   let min = Number.MAX_VALUE;
   let minIndex = -1;

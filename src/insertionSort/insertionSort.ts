@@ -41,7 +41,6 @@ function insertionSort(list:number[] = []) {
     console.log('list[j + 1] ', list[j + 1] )
 
     // list[j + 1]: 5,10,5,15,20,4,15,10,22,10
-    // @ts-ignore
     list[j + 1] = tmp;
   }
 
