@@ -2,11 +2,13 @@
 
 Nums = [1,5,9]
 Target = 10
-[0,2]
 
-I = 0
-J = 1
-1 + 5
+Map = { 1:0 5:1 }
+i = 2
+value = 9
+complement pair = 10 = 9 - 1
+[0,2]
+map[1]
 
 */
 

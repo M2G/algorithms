@@ -13,41 +13,36 @@
 */
 
 
-  class ListNode {
-      val: number
-      next: ListNode | null
-      constructor(val?: number, next?: ListNode | null) {
-          this.val = (val===undefined ? 0 : val)
-          this.next = (next===undefined ? null : next)
-      }
-  }
-
-function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
-let carry = 0;
-let prevNode = new ListNode();
-let headNode = prevNode;
-
-while(l1 || l2 || carry) {
-	let val1 = 0;
-	let val2 = 0;
-
-	if (l1) {
-		val1 = l1.val;
-		l1 = l1.next;
-	}
-	if (l2) {
-		val2 = l2.val;
-		l2 = l2.next;
-	}
-
-	const sum = val1 + val2 + carry;
-	carry = Math.floor(sum / 10);
-	const digit = sum % 10;
-
-	const currNode = new ListNode(digit);
-	prevNode.next = currNode;
-	prevNode = currNode;
+class ListNode {
+	val: number
+	next: ListNode | null
+	constructor(val?: number, next?: ListNode | null) {
+		this.val = (val===undefined ? 0 : val)
+        this.next = (next===undefined ? null : next)
+    }
 }
 
-  return headNode.next;
+function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+	let carry = 0;
+	let sum = 0;
+	const headNode = new ListNode(0);
+	let currNode = headNode;
+	let a = l1;
+	let b = l2;
+	while(a || b || carry) {
+	  sum = (a ? a.val : 0) + (b ? b.val : 0) + carry;
+	  carry = Math.floor(sum / 10);
+	  const digit = sum % 10;
+
+	  currNode.next = new ListNode(digit);
+	  currNode = currNode.next;
+	  a = a ? a.next : null;
+	  b = b ? b.next : null;
+	}
+
+	if (carry) {
+	  currNode.next = new ListNode(carry);
+	}
+
+	 return headNode.next;
 };
