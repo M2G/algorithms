@@ -31,8 +31,16 @@
             if (i + 1 < str.length) {
 
                  const s2 = value(str[i] + 1);
-                  console.log('length s1', s1)
-                  console.log('length s2', s2)
+                  console.log('length', {s1, s2})
+            
+
+                      if (s1 >= s2) {
+                     console.log('IF COMPARE', {s1, s2})
+                           res = res + s1;
+                            console.log('IF COMPARE res', res)
+                       } else {
+                         console.log('ELSE COMPARE res', res)
+                       }
 
             }
         }
