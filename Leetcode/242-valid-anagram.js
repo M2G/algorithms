@@ -1,25 +1,32 @@
 function isAnagram(s, t) {
     if (s.length !== t.length)
         return false;
-    var hashTable = {};
+    var hashMap = {};
     // first term
     for (var i = 0; i < s.length; i += 1) {
-        if (!hashTable[s[i]]) {
-            hashTable[s[i]] = 0;
-            console.log('1', hashTable[s[i]]);
-            console.log('---------');
+        if (hashMap[s[i]]) {
+            hashMap[s[i]] += 1;
+            console.log('1', hashMap[s[i]]);
+            console.log('----------');
         }
-        hashTable[s[i]] += 1;
-        console.log('2', hashTable[s[i]]);
+        else {
+            hashMap[s[i]] = 1;
+            console.log('2', hashMap[s[i]]);
+            console.log('----------');
+        }
     }
     // second term
     for (var j = 0; j < t.length; j += 1) {
-        if (!hashTable[t[j]]) {
+        if (!hashMap[t[j]]) {
+            console.log('3', hashMap[s[j]]);
+            console.log('xxxxxxxxxx');
             return false;
         }
-        console.log(':::::::::', hashTable[t[j]]);
+        hashMap[s[j]] -= 1;
+        console.log('4', hashMap[s[j]]);
+        console.log(':::::::::::');
     }
-    return false;
+    return true;
 }
 ;
 isAnagram("anagram", "nagaram");
