@@ -20,6 +20,10 @@ function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode
 
      	  if (current1.val <= current2.val) {
 
+     	  	prev.next = current1;
+            prev = current1;
+            current1 = current1.next;
+
 	 console.log('current1 IF', current1)
 	  console.log('current2 IF', current2)
 

@@ -13,6 +13,9 @@ function mergeTwoLists(list1, list2) {
     var current2 = list2;
     while (current1 && current2) {
         if (current1.val <= current2.val) {
+            prev.next = current1;
+            prev = current1;
+            current1 = current1.next;
             console.log('current1 IF', current1);
             console.log('current2 IF', current2);
         }
