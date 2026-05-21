@@ -9,5 +9,5 @@ function strStr(haystack: string, needle: string): number {
     return -1;
 };
 
-console.log('[3,2,2,3]', strStr("sadbutsad", "sad");
-console.log('[0,1,2,2,3,0,4,2]', strStr("leetcode", "leeto");
+console.log('[3,2,2,3]', strStr("sadbutsad", "sad"));
+console.log('[0,1,2,2,3,0,4,2]', strStr("leetcode", "leeto"));
