@@ -21,3 +21,13 @@ static void fusion(int[] T, int fin1, int fin2) {
         }
     }
 }
+
+static void triFusion(int [] T, int d, int f) {
+    int m;
+    if (d < f) {
+        m = (d + f) / 2;
+        triFusion(T, d, m);
+        triFusion(T, m + 1, f);
+        fusion(T, d, m, f);
+    }
+}
